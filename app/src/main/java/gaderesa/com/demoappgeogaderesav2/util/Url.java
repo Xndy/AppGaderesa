@@ -6,7 +6,7 @@ package gaderesa.com.demoappgeogaderesav2.util;
 
 public class Url {
 
-    public  final String url = "http://186.3.54.53:9090/";
+    public  final String url = "http://DIRECCIONIP:PUERTO/";
 
     public  String getUrl() {
         return url;
