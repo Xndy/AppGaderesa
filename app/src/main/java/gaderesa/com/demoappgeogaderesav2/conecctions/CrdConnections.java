@@ -111,7 +111,7 @@ public class CrdConnections {
         jsonParams.put("cardCode", id);
         jsonParams.put("glblLocNum", gps);
 
-        JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.POST, "http://186.3.54.53:9090/clientes/clientsucur",
+        JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.POST, URL,
 
                 new JSONObject(jsonParams),
                 new Response.Listener<JSONObject>() {
