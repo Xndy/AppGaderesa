@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Gadere S.A.</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Nombre de Usuario</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar Sesion</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Nombre de Usuario</string>
+    <string name="error_invalid_password"></string>
+    <string name="error_incorrect_password">Contraseña Incorrecta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="title_activity_index">Gadere S.A</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- Validaciones-->
+    <string name="toast_invalido">Existen Campo(s) Vacios</string>
+    <string name="toast_gpsinvalido">No se puede actualizar campos sin información</string>
+    <string name="toast_correcto">Ingreso Correcto</string>
+    <string name="toast_loginIncorrecto">Nombre de usuario o Contraseña Incorrecto</string>
+    <string name="toast_errordeconex">Error de Conexión</string>
+    <string name="toast_actualizacioncorrecta">Actualización Correcto</string>
+    <string name="toast_cliente">El Cliente ya  se encuentra Registrado</string>
+    <string name="toast_clienteexist">No se encontraron Coincidencias</string>
+    <string name="toast_gpsinactivate">Debe de Activar los servicios de GPS</string>
+    <string name="toast_withoutClients">No existen (mas) clientes que cargar</string>
+    <string name="toast_auth">No se encuentra Autorizado para realizar cambios</string>
+    <string name="toast_yactualizado">Cliente ya fue Actualizado</string>
+    <string name="toast_sinsync">No Existen Datos para Sincronizar</string>
+
+    <!-- Datos Maestros-->
+    <string name="txt_datogeneral">Datos Maestros Socio de Negocios</string>
+    <string name="lblRazonSocial">Razon Social:</string>
+    <string name="lblcodigo">Código: </string>
+    <string name="lblNombre">Nombre:</string>
+    <string name="lblRuc">RUC/CI:</string>
+    <string name="lblMoneda">Moneda:</string>
+    <string name="lblGrupo">Grupo:</string>
+    <string name="lblRUC">RUC/CI:</string>
+    <string name="btnSiguienteCl">Siguiente</string>
+    <string name="lblAsesor">Asesor de Servicios</string>
+
+    <string name="lblManifiesto">Número del Manifiesto:</string>
+
+
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnSincronizar">Sincronizar</string>
+
+    <!-- Datos Generales-->
+    <string name="lblTitle">Datos Generales</string>
+    <string name="lblTelf1">Teléfono 1:</string>
+    <string name="lblTelf2">Teléfono 2:</string>
+    <string name="lblTelfM">Teléfono Móvil:</string>
+    <string name="lblFax">Fax:</string>
+    <string name="email">Email:</string>
+    <string name="web">Sitio Web:</string>
+    <string name="carta">Carta de Expedición:</string>
+    <string name="clave">Clave de Acceso:</string>
+    <string name="indicador">Indicador de Factoring:</string>
+    <string name="proyecto">Proyecto SN:</string>
+    <string name="ramo">Ramo:</string>
+    <string name="alias">Nombre Alias:</string>
+    <string name="lblProyecto">Proyecto</string>
+    <string name="lblComents">Comentarios</string>
+
+
+    <!-- Direcciones -->
+    <string name="btnUbicacion">Ubicarme</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="lblDirecciones">Direcciones</string>
+    <string name="direccion_prompt">---------</string>
+    <string name="lblGeolocalizacionActualizar">Coordenadas Actuales:</string>
+    <string name="parar_actualizaciones">Detener Geolocalización</string>
+    <string name="iniciar_actualizaciones">Obtener Geolocalización</string>
+    <string name="get_my_location">Obtener MI Ubicacion</string>
+    <string name="btnEstado">Estado</string>
+    <string name="btnActualizarDatosCrd1">Grabar Nuevos Registros</string>
+    <string name="lblestado">Estado:</string>
+    <string name="rbActivo">Activo</string>
+    <string name="rbInactivo">Inactivo</string>
+    <string name="rbAvanzado">Avanzado</string>
+    <string name="btnActualizarGeoMc">Actualizar Posicion Geográfica</string>
+
+    <string name="btnDireccion">Geolocalización</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_geolocalizacion_registro">GeoReferencia</string>
+
+    <string name="txtClienteAsesor">Escriba el Nombre del Cliente</string>
+    <string name="btnClienteAsesor">Buscar</string>
+    <!-- Georeferencia cuando se crea un cliente -->
+    <string name="lblLatitudCreate">Latitud:</string>
+
+    <string name="btnCrearCl">Guardar Cliente</string>
+    <string name="lblGeo">Coordenadas Geograficas(Puede tomar unos ssegundos): </string>
+    <string name="txtComents">Comentarios</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "515189388443",
+    "firebase_url": "https://appgaderesa-847b4.firebaseio.com",
+    "project_id": "appgaderesa-847b4",
+    "storage_bucket": "appgaderesa-847b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515189388443:android:ca5b239aaefc17c9",
+        "android_client_info": {
+          "package_name": "gaderesa.com.demoappgeogaderesav2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515189388443-k6o132s45atfe5sko2u6rjaplprmb776.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gaderesa.com.demoappgeogaderesav2",
+            "certificate_hash": "4759569503E9D1A04632F7FCEF7B62829831A0E1"
+          }
+        },
+        {
+          "client_id": "515189388443-tns2faeocrjlr67s6lh5h7j6snp3nsto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo2XRIQ96KnDcCgKUE32PWgs0i7e7Gvw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515189388443-tns2faeocrjlr67s6lh5h7j6snp3nsto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

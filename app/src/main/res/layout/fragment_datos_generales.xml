@@ -1,0 +1,406 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="true"
+    android:paddingTop="65dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gaderesa.com.demoappgeogaderesav2.fragments.DatosGenerales"
+    tools:ignore="ObsoleteLayoutParam,ScrollViewSize"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <TextView
+        android:text="@string/lblcodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblcodigo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/txtDtosGenerales"
+        android:layout_alignStart="@+id/txtDtosGenerales"
+        android:layout_marginTop="35dp"
+        android:layout_alignEnd="@+id/txtDtosGenerales"
+        android:textAlignment="center" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtCodigo"
+        android:layout_alignEnd="@+id/lblcodigo"
+        android:layout_alignStart="@+id/txtCodigo" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:text=""
+        android:hint="@string/lblNombre"
+        android:id="@+id/txt_Nombre"
+        tools:ignore="LabelFor"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtCodigo"
+        android:layout_alignEnd="@+id/lblcodigo"
+        android:layout_alignStart="@+id/txtCodigo" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoTelf2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAutoTelf1"
+        android:layout_alignStart="@+id/txtAutoTelf1"
+        android:layout_alignEnd="@+id/txtAutoTelf1">
+
+        <EditText
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/txtTelf2"
+            android:hint="@string/lblTelf2"
+            tools:ignore="LabelFor,RelativeOverlap"
+            android:layout_alignBaseline="@+id/txtAutoTelf1"
+            android:layout_alignBottom="@+id/txtAutoTelf1"
+            android:layout_alignEnd="@+id/txtAutoTelf1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAsesor"
+        android:layout_marginTop="17dp"
+        android:id="@+id/spnAsesor"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_alignStart="@+id/lblGrupo"
+        android:layout_alignEnd="@+id/spnGrupo" />
+
+
+    <TextView
+        android:text="@string/lblGeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblGeo"
+        tools:ignore="ObsoleteLayoutParam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/spnProyecto"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:text="@string/txt_datogeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/txtDtosGenerales"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnDocumento"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_below="@+id/lblcodigo"
+        android:layout_marginTop="14dp"
+        android:layout_alignEnd="@+id/lblcodigo"
+        android:layout_alignStart="@+id/lblcodigo"
+        android:popupBackground="@drawable/common_google_signin_btn_icon_dark_disabled" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoRazon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtAutoNombre"
+        android:layout_alignEnd="@+id/txtAutoNombre"
+        android:layout_alignStart="@+id/txtAutoNombre" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtRazonSocial"
+        tools:ignore="LabelFor"
+        android:hint="@string/lblRazonSocial"
+        android:layout_below="@+id/txtAutoNombre"
+        android:layout_alignStart="@+id/txtAutoNombre"
+        android:layout_alignEnd="@+id/txtAutoNombre" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoTelfEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAutoTelfM"
+        android:layout_alignStart="@+id/txtAutoTelfM"
+        android:layout_alignEnd="@+id/txtAutoTelfM">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtEmail"
+            tools:ignore="LabelFor"
+            android:hint="@string/email"
+            android:layout_below="@+id/txtAutoTelfM"
+            android:layout_alignStart="@+id/txtAutoTelfM" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnProyecto"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/txtAutoTelfEmail"
+        android:layout_alignEnd="@+id/txtAutoTelf1"
+        android:layout_alignStart="@+id/lblAsesor" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/spnGrupo"
+        tools:ignore="LabelFor"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/txtAutoRazon"
+        android:layout_alignEnd="@+id/txtAutoRazon"
+        android:layout_alignStart="@+id/lblAsesor" />
+
+    <TextView
+        android:text="@string/lblAsesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/lblAsesor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/txtAutoRuc"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoTelfM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAutoTelf2"
+        android:layout_alignStart="@+id/txtAutoTelf2"
+        android:layout_alignEnd="@+id/txtAutoTelf2">
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtTelfM"
+        android:inputType="phone"
+        android:hint="@string/lblTelfM"
+        tools:ignore="LabelFor,RelativeOverlap"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtAutoTelf2"
+        android:layout_alignStart="@+id/txtAutoTelf2"
+        android:layout_alignEnd="@+id/spnProyecto" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoTelf1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/spnAsesor"
+        android:layout_alignStart="@+id/spnAsesor"
+        android:layout_alignEnd="@+id/spnAsesor">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtTelf1"
+        tools:ignore="LabelFor"
+        android:hint="@string/lblTelf1"
+        android:inputType="phone"
+        android:layout_below="@+id/spnAsesor"
+        android:layout_alignEnd="@+id/spnAsesor"
+        android:layout_marginTop="22dp"
+        android:layout_alignStart="@+id/spnAsesor" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_below="@+id/lblGeo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:id="@+id/lblGeolocalizacionCreate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            tools:ignore="ObsoleteLayoutParam"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginTop="19dp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_height="55dp" />
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:text="@string/btnActualizarGeoMc"
+            android:layout_width="wrap_content"
+            android:id="@+id/btnActualizarGeoMc"
+            tools:ignore="HardcodedText"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtAutoComents"
+            android:layout_width="321dp"
+            android:layout_height="160dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:hint="@string/txtComents"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:id="@+id/txtComents"
+                android:layout_marginTop="45dp"
+                tools:ignore="InefficientWeight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSiguienteCl"
+            tools:ignore="ObsoleteLayoutParam,UnknownIdInLayout"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/spnProyecto"
+            android:layout_alignEnd="@+id/lblAsesor"
+            android:layout_weight="0.02" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/index"
+            android:id="@+id/image_Gaderesa"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,ObsoleteLayoutParam"
+            android:layout_marginTop="102dp"
+            android:layout_below="@+id/spnProyecto"
+            android:layout_alignStart="@+id/lblProyecto"
+            android:layout_toStartOf="@+id/spnProyecto"
+            android:layout_alignEnd="@+id/spnProyecto"
+            android:layout_weight="0.27" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtAutoRuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/spnGrupo"
+        android:layout_alignEnd="@+id/spnGrupo"
+        android:layout_alignStart="@+id/lblGrupo">
+
+        <EditText
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLength="15"
+            android:layout_marginTop="27dp"
+            android:id="@+id/txtRUC"
+            android:hint="@string/lblRuc"
+            tools:ignore="LabelFor"
+            android:layout_below="@+id/lblGrupo"
+            android:layout_alignEnd="@+id/lblGrupo"
+            android:layout_alignStart="@+id/lblGrupo" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:text="@string/lblGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/lblGrupo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/spnGrupo"
+        android:layout_alignStart="@+id/txtAutoRazon" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnTipo"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_alignTop="@+id/txtCodigo"
+        android:layout_alignEnd="@+id/txtAutoNombre"
+        android:layout_toEndOf="@+id/txtCodigo" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:maxLength="15"
+        android:id="@+id/txtCodigo"
+        tools:ignore="HardcodedText,LabelFor"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/spnDocumento"
+        android:layout_alignStart="@+id/spnDocumento" />
+
+    <TextView
+        android:text="@string/lblProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblProyecto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/lblGeo"
+        android:layout_alignStart="@+id/txtAutoTelfEmail"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
+</ScrollView>

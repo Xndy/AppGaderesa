@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gaderesa.com.demoappgeogaderesav2.fragments.MisClientes">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnClienteAsesor"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnClienteAsesor">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/txtClienteAsesor"
+            android:id="@+id/txtClienteAsesor"
+            android:layout_marginTop="18dp"
+            tools:ignore="HardcodedText,LabelFor"
+            android:layout_width="274dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="@string/btnClienteAsesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClienteAsesor"
+        tools:ignore="NotSibling,RelativeOverlap"
+        android:layout_marginTop="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:layout_weight="1"
+        android:id="@+id/lvListmc"
+        tools:ignore="InefficientWeight,ObsoleteLayoutParam,UnknownId"
+        android:layout_marginTop="162dp"
+        android:layout_below="@+id/textInputLayout7"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

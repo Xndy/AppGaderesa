@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+
+    android:layout_width="fill_parent"
+    android:layout_margin="6dp"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/blueSky"
+    app:cardElevation="6dp"
+    app:contentPadding="@dimen/cardview_default_radius">
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/lblNombreSucursalDBA"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:gravity="right"
+            android:background="@android:color/darker_gray"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/lblGeolocalizacionDBA"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@color/blueSky" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDireccionSync"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@android:color/holo_green_light"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_alignParentStart="true" />
+
+</android.support.v7.widget.CardView>

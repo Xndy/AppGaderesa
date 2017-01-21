@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Inicio"
+            android:id="@+id/nav_Inicio"
+            tools:ignore="HardcodedText" />
+        <item
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Crear Cliente"
+            android:id="@+id/nav_saveCliente"
+            tools:ignore="HardcodedText" />
+        <item
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Mis Clientes"
+            android:id="@+id/nav_MisClientes"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Consulta de Sucursales"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_Offline"
+            android:icon="@android:drawable/presence_offline"
+            android:title="Modo Offline"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_Sync"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Sincronizar Datos"
+            tools:ignore="HardcodedText" />
+
+    </group>
+
+    <item android:title="Ajustes"
+        tools:ignore="HardcodedText">
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>

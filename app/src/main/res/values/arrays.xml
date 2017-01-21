@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tipo">
+        <item>Cliente</item>
+        <item>Proveedor</item>
+        <item>Lead</item>
+
+    </string-array>
+
+    <string-array name="grupos">
+        <item>Hospitalario</item>
+        <item>Hospitalario e Industrial</item>
+        <item>Industrial</item>
+        <item>Los 70 Incobrables</item>
+    </string-array>
+</resources>

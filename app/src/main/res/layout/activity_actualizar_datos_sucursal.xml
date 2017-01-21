@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="gaderesa.com.demoappgeogaderesav2.fragments.ActualizarDatosSucursal">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="UselessLeaf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView android:id="@+id/lblGeolocalizacionActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblGeolocalizacionActualizar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_above="@+id/lblGeoActualActualizar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="13dp"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <TextView android:id="@+id/lblGeoActualActualizar"
+            android:layout_width="191dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="16dp"
+            android:layout_above="@+id/btnActualizar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textStyle="normal|italic"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text=""
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <Button android:id="@+id/btnActualizar"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar_actualizaciones"
+            android:layout_marginBottom="21dp"
+            android:layout_above="@+id/btnActualizarDatosCrd1"
+            android:layout_alignEnd="@+id/btnActualizarDatosCrd1"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <Button
+            android:text="@string/btnActualizarDatosCrd1"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnActualizarDatosCrd1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/lblCardcodeact"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,ObsoleteLayoutParam,TextFields"
+            android:layout_alignStart="@+id/lblAddress" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/lblAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,ObsoleteLayoutParam,TextFields" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/lblstreet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,ObsoleteLayoutParam,TextFields" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblAddress"
+            android:id="@+id/lblGeolocalizacionAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,ObsoleteLayoutParam,TextFields"
+            android:layout_toEndOf="@+id/lblstreet" />
+    </LinearLayout>
+
+
+</RelativeLayout>
